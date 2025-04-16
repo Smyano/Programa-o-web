@@ -6,24 +6,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="login.css" />
-  <title>Login</title>
+  <title>Cadastro</title>
 </head>
+
 <body>
   <div class="container">
     <div class="forms-container">
       <div class="signin-signup">
-        <form action="" class="sign-in-form">
-          <h2 class="title">Entrar</h2>
+        <form action="" class="sign-up-form">
+          <h2 class="title">Cadastrar</h2>
           <div class="input-field">
             <i class="fas fa-user"></i>
-            <input type="text" id="user" placeholder="Nome de usuário" />
+            <input type="text" placeholder="Nome de usuário" />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-envelope"></i>
+            <input type="email" placeholder="E-mail" />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-calendar-alt"></i>
+            <input type="date" id="dataNascimento" required />
           </div>
           <div class="input-field">
             <i class="fas fa-lock"></i>
-            <input type="password" id="senha" placeholder="Senha" />
+            <input type="password" placeholder="Senha" />
           </div>
-          <input type="submit" value="Entrar" class="btn solid" />
-          <p class="social-text">Ou entre com uma plataforma social</p>
+          <input type="button" class="btn" value="Cadastrar" onclick="cadastro()" />
+
+          <p class="social-text">Ou cadastre-se com uma plataforma social</p>
           <div class="social-media">
             <a href="https://www.facebook.com/login" class="social-icon" target="_blank" rel="noopener noreferrer">
               <i class="fab fa-facebook-f"></i>
@@ -46,10 +56,10 @@
     <div class="panels-container">
       <div class="panel left-panel">
         <div class="content">
-          <h3>Novo por aqui?</h3>
+          <h3>Já tem uma conta?</h3>
           <br>
-          <button class="btn transparent" id="sign-up-btn" onclick="window.location.href='cadastro.html'">
-            Cadastrar
+          <button class="btn transparent" id="sign-in-btn" onclick="window.location.href='login.html'">
+            Entrar
           </button>
         </div>
         <img src="img/log.svg" class="image" alt="" />
@@ -58,10 +68,10 @@
         <div class="content">
           <h3>Seja um de nós</h3>
           <p>
-            Cadastre-se aqui!
+            Entre com seu nome de usuário e senha.
           </p>
-          <button class="btn transparent" id="sign-in-btn">
-            Entrar
+          <button class="btn transparent" id="sign-up-btn">
+            Cadastrar
           </button>
         </div>
         <img src="img/register.svg" class="image" alt="" />
