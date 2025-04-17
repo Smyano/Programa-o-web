@@ -69,19 +69,16 @@ section{
 
 .about a:hover{
     color: rgb(91, 3, 84);
-    border-bottom: 0.1rem solid var(--main-color);
-    padding-bottom: 0.5rem;
-    
-}
+    }
 
 .home-container{
     background: url(fin.jpeg);
-    height: auto;
-    width: auto;
+    height: 90vh;
+    width: 100%;
     background-position: center;
     background-size: cover;
-    
-    width: 100%;
+    border-radius: 5%;
+    position: relative;
 }
 
 .home-container::selection{
@@ -93,7 +90,7 @@ section{
 .text{
     margin: 0;
     max-width: 50rem;
-
+    transform: translate(0%, 30%);
 }
 
 .text h3{
@@ -127,25 +124,11 @@ section{
     font-weight: 80;
     line-height: 1.8;
     padding: 1rem;
+    
  
 }
 
-.textB h1{
-    margin: 0;
-    color: rgb(152, 43, 155);
-    font-size: 3rem;
-    
-}
 
-.textB p{
-    margin: 0;
-    color: #fff;
-    font-size: 2rem;
-    font-weight: 80;
-    line-height: 1.8;
-    padding: 1rem;
-    
-}
 .textA, .textB {
     margin-left: 1rem;
 }
@@ -156,9 +139,10 @@ section{
     height: auto;             
     display: block;           
     position: absolute;       
-    top: 138%;        
+    top: 170%;        
     right: 0;                
-    margin: 0;               
+    margin: 0;
+
 }
 
 
@@ -210,3 +194,122 @@ footer p {
 
   }
 
+.text-fin {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap; 
+}
+
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropbtn {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.dropbtn:hover{
+    color: rgb(91, 3, 84);
+    
+}
+
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color:transparent;
+    
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+
+.apf-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .apf {
+    background-color: rgb(245, 205, 245);
+
+    padding: 30px;
+    margin-top: 100px;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(235, 229, 229, 0.1);
+    text-align: center;
+    margin-right: auto;
+    position: absolute;         
+    top: 0%;                 
+    left: 50%;                  
+    transform: translate(60%, 230%);
+  }
+  
+  select,
+  .apfbutton {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 10px;
+    border-radius: 6px;
+  }
+  
+  .apfbutton {
+    background-color:  rgb(175, 89, 178);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    
+  }
+  
+  .apfbutton:hover {
+    background-color:  rgb(152, 43, 155);;
+  }
+
+  select, apfbutton {
+    padding: 10px;
+    top: -10px;
+    font-size: 14px;
+  }
+
+  apfbutton {
+    background-color: rgb(152, 43, 155);;
+    color: rgb(203, 200, 200);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
