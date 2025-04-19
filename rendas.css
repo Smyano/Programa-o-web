@@ -1,0 +1,254 @@
+:root{
+    --main-color: rgb(152, 43, 155);
+    --black: #13131a;
+    --bg: #010103;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3 );
+    font-size: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: 0.2 linear;
+}
+
+
+body{
+    background-color: var(--bg);
+    font-size: 1rem;    
+    padding-top: 80px;
+    
+}
+.container {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+}
+
+
+section{
+    padding: 3rem 2rem;
+    margin: auto;
+    max-width: -1200px;
+}
+
+.header {
+    position: fixed;      
+    top: 0;               
+    left: 0;               
+    right: 0;             
+    width: 100%;          
+    background-color: var(--bg); 
+    z-index: 1000;         
+    border-bottom: var(--border);
+    display: flex;         
+    align-items: center;   
+    justify-content: center;  
+    padding: 1rem 2rem;  
+    box-sizing: border-box;  
+}
+    
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.about a {
+    margin:0 1rem;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.about a:hover{
+    color: rgb(91, 3, 84);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.5rem;
+    
+}
+
+.home-container{
+    background: url(fin.jpeg);
+    height: auto;
+    width: auto;
+    background-position: center;
+    background-size: cover;
+    
+    width: 100%;
+}
+
+.home-container::selection{
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.btn.transparent {
+    margin: 0;
+    color: #fff;
+    background: none;
+    border: 2px solid #fff;
+    width: 100px;
+    height: 41px;
+    font-weight: 600;
+    font-size: 0.1,9rem;
+    border-radius: 20px;
+    right: 20px;
+    position: fixed;
+    transform: translateY(-18%);
+ }
+
+  .btn.transparent:hover{
+    background-color: rgb(79, 27, 80);
+
+  }
+  .dropdown {
+    display: inline-block;
+    position: relative;
+    
+}
+
+
+.dropbtn {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.dropbtn:hover{
+    color: rgb(91, 3, 84);
+    
+}
+
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color:transparent;
+    
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+
+.controle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
+    font-size: large;
+    flex-wrap: wrap;   
+}
+
+.rendas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
+    font-size: large;
+    flex-wrap: wrap;   
+    padding: 30px;
+    }
+
+.btnrenda {
+    margin: auto;
+    color: #fff;
+    background: rgb(152, 43, 155);
+    border: 2px solid #fff;
+    width: 100px;
+    height: 41px;
+    border-radius: 20px;
+    align-items: center;
+    /* position:fixed; */
+    top: 80%;
+    right: 50%;
+ }
+
+  .btnrenda:hover{
+    background-color: rgb(79, 27, 80);
+
+  }
+
+
+
+
+.rendas {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 2.6rem;
+    color: #ffffff;
+    font-weight: 500;
+    text-align:center;
+  }
+  
+  
+  input {
+
+    width: 100%; 
+    display: block;
+    margin: 0 auto;
+    width: 200px; 
+    padding: 10px;
+    border-radius: 20px; 
+    border: 1px solid #ddd; 
+    font-size: 1.5rem; 
+    color: #333; 
+    background-color: #ffffff; 
+    outline: none; 
+  }
+  
+  
+  input:focus {
+    border-color:rgb(152, 43, 155); 
+    box-shadow: 0 0 8px rgba(152, 43, 155, 0.3); 
+  }
+  
+  
+  input::placeholder {
+    color: #aaa; 
+    font-weight: 300; 
+  }
+
+  .caixa-rendas {
+    background-color: rgba(255, 255, 255, 0.05); /* caixa transparente leve */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 400px;
+    margin: 40px auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px); /* efeito vidro (opcional) */
+}
+
+
+

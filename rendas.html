@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rendas.css">
+    <title>Rendas</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <a href="perfil.html" class="perfil">
+            <img src="logo.png" class="logo">
+        </a>
+        <section>
+            <nav class="about">
+                <a href="home.html">Home</a>
+                <a href="rendas.html">Rendas</a>
+                <div class="dropdown">
+                    <a href="gastos.html">Gastos</a>
+
+                    <button class="dropbtn"></button>
+                    <div class="dropdown-content">
+                        <a href="#">Alimentação</a>
+                        <a href="#">Saúde</a>
+                        <a href="#">Moradia</a>
+                        <a href="#">Necessidades</a>
+                        <a href="#">lazer</a>
+                    </div>
+                </div>
+                <button class="btn transparent" onclick="window.location.href='cadastro.html'">
+                    Cadastrar
+                </button>
+
+            </nav>
+        </section>
+    </header>
+
+
+    <div class="controle">
+    <h2>Controle de Rendas</h2>
+    </div>
+
+    <div class="caixa-rendas">
+    <div class="rendas">
+  <label for="rendaFixa">Renda Fixa (R$):</label>
+  <input type="number" id="rendaFixa" placeholder="Ex: 300,00">
+
+  <label for="rendaExtra">Renda Extra (R$):</label>
+  <input type="number" id="rendaExtra" placeholder="Ex: 500,00">
+
+  <label for="rendaVariavel">Renda Variável (R$):</label>
+  <input type="number" id="rendaVariavel" placeholder="Ex: 1000,00">
+<br>
+
+  <button class="btnrenda">Calcular Total</button>
+</div>
+</div>
+
+<script src="calculo.js"></script>
+  
+</body>
+
+<!-- 
+<footer>
+        <p>&copy; Site desenvolvido através da disciplina "programação web".</p>
+    </footer> -->
+
+</html>

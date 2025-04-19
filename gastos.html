@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="rendaF.css">
+    <link rel="stylesheet" href="gastos.css">
     <title>Gastos</title>
 </head>
 
@@ -17,11 +17,19 @@
         <section>
             <nav class="about">
                 <a href="home.html">Home</a>
-                <a href="rendaF.html">Renda Fixa</a>
-                <a href="rendaV.html">Renda Variável</a>
-                <a href="rendaE.html">Renda Extra</a>
-                <a href="gastos.html">Gastos</a>
-
+                <a href="rendas.html">Rendas</a>
+                <div class="dropdown">
+                    <a href="gastos.html">Gastos</a>
+                    
+                        <button class="dropbtn"></button>
+                        <div class="dropdown-content">
+                            <a href="#">Alimentação</a>
+                            <a href="#">Saúde</a>
+                            <a href="#">Moradia</a>
+                            <a href="#">Necessidades</a>
+                            <a href="#">lazer</a>
+                        </div>
+                    </div>
                 <button class="btn transparent" onclick="window.location.href='cadastro.html'">
                     Cadastrar
                   </button>
@@ -29,5 +37,6 @@
             </nav>
         </section>
     </header>
+    
 </body>
 </html>
