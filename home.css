@@ -75,7 +75,7 @@ section {
 }
 
 .home-container {
-    background: url(fin.jpeg);
+    background: url(fi.png);
     height: 80vh;
     width: 100%;
     background-position: center;
@@ -97,17 +97,16 @@ section {
 }
 
 .text h3 {
-    margin: 0;
-    color: rgb(152, 43, 155);
+    /* margin: 3 auto; */
+    color: rgb(255, 255, 255);
     font-size: 5rem;
-    transform: translate(0%, 50%);
+    transform: translate(0%, 30%);
 }
 
 .text p {
     margin: 0;
     color: #fff;
     font-size: 3rem;
-
     line-height: 1.5;
     padding: 2rem;
     transform: translate(0%, 10%);
@@ -217,7 +216,7 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* height: 10vh; */
 }
 
 .apf {

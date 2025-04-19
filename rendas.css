@@ -137,19 +137,20 @@ section{
 .btnrenda {
     margin: auto;
     color: #fff;
-    background: rgb(152, 43, 155);
+    background: transparent;
     border: 2px solid #fff;
     width: 100px;
     height: 41px;
     border-radius: 20px;
-    align-items: center;
+    /* left: 100%; */
+    /* align-items: center; */
     /* position:fixed; */
     top: 80%;
     /* right: 50%; */
  }
 
   .btnrenda:hover{
-    background-color: rgb(79, 27, 80);
+    background-color:  rgb(91, 3, 84);;
 
   }
  
@@ -184,7 +185,7 @@ section{
     /* left: 5%; */
     flex-direction: column;
     /* margin: 0 auto; */
-    width: 250px ; 
+    width: 300px ; 
     padding: 10px;
     border-radius: 20px; 
     border: 1px solid #ddd; 
