@@ -18,7 +18,7 @@
             <nav class="about">
                 <a href="home.html">Home</a>
                 <a href="rendas.html">Rendas</a>
-                <div class="dropdown">
+                <!-- <div class="dropdown">
                     <a href="gastos.html">Gastos</a>
 
                     <button class="dropbtn"></button>
@@ -29,7 +29,7 @@
                         <a href="#">Necessidades</a>
                         <a href="#">lazer</a>
                     </div>
-                </div>
+                </div> -->
                 <button class="btn transparent" onclick="window.location.href='cadastro.html'">
                     Cadastrar
                 </button>
@@ -38,13 +38,9 @@
         </section>
     </header>
 
-
-    <div class="controle">
-    <h2>Calculo Rendas</h2>
-    </div>
-
     <div class="caixa-rendas">
     <div class="rendas">
+        <div class="textR"><h2>Rendas</h2></div><br>
   <label for="rendaFixa">Renda Fixa (R$):</label>
   <input type="number" id="rendaFixa" placeholder="Ex: 300,00">
 
@@ -53,15 +49,85 @@
 
   <label for="rendaVariavel">Renda Variável (R$):</label>
   <input type="number" id="rendaVariavel" placeholder="Ex: 1000,00">
+        <br>
+
+<!-- <button class="btnrenda" onclick="calcularRenda()">Renda Total</button> -->
+
+<div id="resultado"></div>
+
+<div class="textR"><h2>Categoria de Gastos</h2></div><br>
+<label for="alimentacao">Alimentação (R$):</label>
+<input type="number" id="alimentacao" placeholder="Ex: 300,00">
+
+<label for="saude">Saúde (R$):</label>
+<input type="number" id="saude" placeholder="Ex: 500,00">
+
+<label for="moradia">Moradia (R$):</label>
+<input type="number" id="moradia" placeholder="Ex: 1000,00">
+
+<label for="lazer">Lazer (R$):</label>
+<input type="number" id="lazer" placeholder="Ex: 500,00">
+
+<label for="necessidades">Necessidades (R$):</label>
+<input type="number" id="necessidades" placeholder="Ex: 1000,00">
 <br>
 
-<button class="btnrenda" onclick="calcularTotal()">Calcular Total</button>
+<button class="btnrenda" onclick="calcularGastos()">Calcular Total</button>
 <br><br>
-<div id="resultado"></div>
-</div>
-</div>
+<div id="resultadoGastos"></div>
 
+</div>
+</div>
+ 
+<!-- <div class="controle">
+    <h2>Cateorias de gastos </h2>
+    </div>
+
+    <div class="caixa-rendas">
+        <div class="categorias">
+          <label for="alimentacao">Alimentação (R$):</label>
+          <input type="number" id="alimentacao" placeholder="Ex: 300,00">
+      
+          <label for="saude">Saúde (R$):</label>
+          <input type="number" id="saude" placeholder="Ex: 500,00">
+      
+          <label for="moradia">Moradia (R$):</label>
+          <input type="number" id="moradia" placeholder="Ex: 1000,00">
+      
+          <label for="lazer">Lazer (R$):</label>
+          <input type="number" id="lazer" placeholder="Ex: 500,00">
+      
+          <label for="necessidades">Necessidades (R$):</label>
+          <input type="number" id="necessidades" placeholder="Ex: 1000,00">
+          <br>
+      
+          <button class="btnrenda" onclick="calcularGastos()">Gasto Total</button>
+          <br><br>
+          <div id="resultadoGastos"></div>
+        </div>
+      </div> -->
 <script src="calculo.js"></script>
+
+
+
+<!-- <div class="caixaR">
+    <div class="opcao">
+      <div class="textoC">
+        <div id="resultadoTotal">
+        <button class="btnrenda" onclick="calcularTotal()">Calcular Total</button>
+    </div> -->
+      <!-- </div>
+      <span class="seta">➔</span>
+    </div> -->
+  <!-- </a>
+</div> -->
+
+
+
+
+   
+
+     
   
 </body>
 
