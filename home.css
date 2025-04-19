@@ -170,7 +170,7 @@ footer p {
     margin: 0;
     color: #fff;
     background: none;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     width: 100px;
     height: 41px;
     font-weight: 600;
@@ -185,6 +185,24 @@ footer p {
     background-color: rgb(79, 27, 80);
 
 }
+
+.btnlogin {
+    margin: 0;
+    color: #fff;
+    background: none;
+    width: 140px;
+    height: 41px;
+    font-weight: 600;
+    font-size: 0.1, 9rem;
+    right: 100px;
+    position: fixed;
+    transform: translateY(-18%);
+}
+
+.btnlogin:hover {
+    color: rgb(79, 27, 80);
+}
+
 
 .text-fin {
     display: flex;
@@ -305,3 +323,49 @@ apfbutton {
     border-radius: 6px;
     cursor: pointer;
 }
+
+
+.opcao {
+    width: 30%;
+    font-size: medium;
+    background-color:transparent;
+    border-color:  rgb(152, 43, 155);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .opcao:hover {
+    background-color:  rgb(91, 3, 84);
+  }
+
+  .textoC {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+
+  .seta {
+    font-size: 20px;
+    color: rgb(152, 43, 155);
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .caixaR {
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
