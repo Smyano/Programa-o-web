@@ -272,21 +272,24 @@ footer p {
 }
 
 .apf {
-    background-color: rgb(245, 205, 245);
+    background-color: transparent;
     padding: 30px;
     margin-top: 100px;
     width: 300px;
-    border-radius: 12px;
-    box-shadow: 0 0 15px rgba(235, 229, 229, 0.1);
+    border-radius: 20px;
+    border: 1px solid #fff;
     text-align: center;
     margin-right: auto;
     position: absolute;
-    top: -15%;
-    left: 50%;
-    transform: translate(60%, 230%);
+    top: 223%;
+    left: 65%;
 }
 
-select,
+.resultado {
+    font-size: 15px;
+}
+
+
 .apfbutton {
     padding: 10px;
     margin-top: 10px;
@@ -295,24 +298,26 @@ select,
 }
 
 .apfbutton {
-    background-color: rgb(175, 89, 178);
-    color: rgb(255, 255, 255);
+    background-color:transparent;
     border: none;
-    border-radius: 6px;
+    border-radius: 20px;
+    border: 1px solid #fff;
     cursor: pointer;
 
 }
 
 .apfbutton:hover {
-    background-color: rgb(152, 43, 155);
-    ;
+    background-color: rgb(91, 3, 84);
 }
 
+.selecion{
+    font-size: 18px;
+}
 select,
 apfbutton {
-    padding: 10px;
+    padding: 7px;
     top: -10px;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 apfbutton {
@@ -330,7 +335,7 @@ apfbutton {
     font-size: medium;
     background-color:transparent;
     border-color:  rgb(152, 43, 155);
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 15px;
     margin-bottom: 10px;
     display: flex;
