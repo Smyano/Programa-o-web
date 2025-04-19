@@ -235,8 +235,9 @@ section{
   
   
   input::placeholder {
-    color: #aaa; 
     font-weight: 300; 
+    color: #aaa; 
+
   }
 
   .caixa-rendas {
