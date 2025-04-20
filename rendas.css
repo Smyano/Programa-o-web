@@ -217,51 +217,9 @@ section{
     /* width: 50%; */
     margin: 20px ;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    /* backdrop-filter: blur(8px);  */
+ 
 }
 
-
-/* .textoC {
-    display: flex;
-    align-items: center;
-  } */
-
-
-  /* .seta {
-    font-size: 20px;
-    color: rgb(152, 43, 155);
-  } */
-
-  /* a {
-    text-decoration: none;
-    color: inherit;
-  } */
-  /* .caixaR {
-   
-    margin-top: -100px;
-    
-    margin-left: 60%;
-  } */
-  /* .opcao {
-    top: 50%;
-    width: 50%;
-    font-size: 20px;
-    background-color:transparent;
-    border-color:  rgb(152, 43, 155);
-    border-radius: 20px;
-    padding: 15px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-  } */
-/* 
-  .opcao:hover {
-    background-color:  rgb(91, 3, 84);
-  } */
 
   footer {
     background-color: #474747;
