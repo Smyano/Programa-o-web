@@ -167,7 +167,7 @@ footer p {
     border-radius: 20px;
     right: 20px;
     position: fixed;
-    transform: translateY(-14%);
+    transform: translateY(-6%);
 }
 
 .btn.transparent:hover {
@@ -185,7 +185,7 @@ footer p {
     font-size: 0.1, 9rem;
     right: 100px;
     position: fixed;
-    transform: translateY(-14%);
+    transform: translateY(-6%);
 }
 
 .btnlogin:hover {

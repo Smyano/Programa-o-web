@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil</title>
-    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="perfil.css">
+    <title>Perfil</title>
 </head>
+
 <body>
-    <div class="container">
-        <header>
+    <header class="header">
+
+        <a href="perfil.html" class="perfil">
             <div class="logo">
             <img src="login1.png" class="logo">
         </div>
-            <nav>
-                <a href="home.html" class="link">Home</a>
-                <a href="#" class="link">Editar Perfil</a>
+        </a>
+        <section>
+            <nav class="about">
+                <a href="home.html">Home</a>
+                <button class="btnlogin" onclick="window.location.href='login.html'">
+                    Entrar
+                </button>
+                <button class="btn transparent" onclick="window.location.href='cadastro.html'">
+                    Cadastrar
+                  </button>
+              
             </nav>
-        </header>
-
-        <main>
-            <div class="user-info">
-                <h1>Bem-vindo(a), Yano!</h1>
-                <div class="profile-card">
-                    <img src="nami.jpg" class="avatar">
-                    <div class="user-details">
-                        <h2>Informações de Perfil</h2>
-                        <p><strong>Nome:</strong> Yano</p>
-                        <p><strong>Email:</strong> yano@example.com</p>
-                        <p><strong>Usuário:</strong> senac</p>
-                        <p><strong>Senha:</strong> *****</p>
-                        <p><strong>Data de Cadastro:</strong> 12/03/2023</p>
-                    </div>
+        </section>
+    </header>
+    <main>
+        <div class="user-info">
+            <h1>Bem-vindo(a), Yano!</h1>
+            <div class="profile-card">
+                <img src="nami.jpg" class="avatar">
+                <div class="user-details">
+                    <h2>Informações de Perfil</h2>
+                    <p><strong>Nome:</strong> Yano</p>
+                    <p><strong>Email:</strong> yano@example.com</p>
+                    <p><strong>Usuário:</strong> senac</p>
+                    <p><strong>Senha:</strong> ****</p>
+                    <p><strong>Data de Cadastro:</strong> 12/03/2023</p>
                 </div>
-
-                <a href="Eperfil.html"><button class="btn edit-btn">Editar Perfil</button></a>
             </div>
-        </main>
 
-        <footer>
-            <p>&copy; Site desenvolvido através da disciplina "programação web".</p>
-        </footer>
-    </div>
+        </div>
+        <a href="Eperfil.html"><button class="btnE">Editar Perfil</button></a>
+    </main>
 </body>
 </html>
