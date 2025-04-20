@@ -25,8 +25,11 @@ body {
 
 
 }
-
-
+.logo{
+   width: 50px;
+   color: #fff;
+    
+}
 
 
 section {
@@ -57,18 +60,6 @@ section {
     justify-content: center;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-}
-
-.about a {
-    margin: 0 1rem;
-    font-size: 1.8rem;
-    color: #fff;
-}
-
-.about a:hover {
-    color: rgb(91, 3, 84);
-    border-bottom: 0.1rem solid var(--main-color);
-    padding-bottom: 0.5rem;
 }
 
 .home-container {
@@ -183,7 +174,7 @@ footer p {
 }
 
 .btn.transparent:hover {
-    background-color: rgb(79, 27, 80);
+    background-color: #4C1D5C;
 
 }
 
@@ -201,7 +192,7 @@ footer p {
 }
 
 .btnlogin:hover {
-    color: rgb(79, 27, 80);
+    color: #4C1D5C;
 }
 
 
@@ -214,73 +205,9 @@ footer p {
     flex-wrap: wrap;
 }
 
-.apf-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* height: 10vh; */
-}
-
-.apf {
-    background-color: transparent;
-    padding: 30px;
-    margin-top: 100px;
-    width: 300px;
-    border-radius: 20px;
-    border: 1px solid #fff;
-    text-align: center;
-    margin-right: auto;
-    position: absolute;
-    top: 223%;
-    left: 65%;
-}
-
-.resultado {
-    font-size: 15px;
-}
 
 
-.apfbutton {
-    padding: 10px;
-    margin-top: 10px;
-    font-size: 10px;
-    border-radius: 6px;
-}
-
-.apfbutton {
-    background-color:transparent;
-    border: none;
-    border-radius: 20px;
-    border: 1px solid #fff;
-    cursor: pointer;
-
-}
-
-.apfbutton:hover {
-    background-color: rgb(91, 3, 84);
-}
-
-.selecion{
-    font-size: 18px;
-}
-select,
-apfbutton {
-    padding: 7px;
-    top: -10px;
-    font-size: 12px;
-}
-
-apfbutton {
-    background-color: rgb(152, 43, 155);
-    ;
-    color: rgb(203, 200, 200);
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-
-.opcao {
+ .opcao {
     width: auto;
     font-size: medium;
     background-color:transparent;
@@ -295,15 +222,17 @@ apfbutton {
     transition: background-color 0.3s;
     border: 1px solid rgba(255, 255, 255, 0.2);
   }
-
-  .opcao:hover {
+ .opcao:hover {
     background-color:#4C1D5C;
-  }
+ }
+
 
   .textoC {
+    color: #fff;
     display: flex;
     align-items: center;
     gap: 10px;
+    font-size: 2rem;
   }
 
 
@@ -319,6 +248,7 @@ apfbutton {
   .caixaR {
     margin: 1%;
     display: flex;
+    /* font-size: medium; */
     flex-direction: column;
     justify-content: center;
   }

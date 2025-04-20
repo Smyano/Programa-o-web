@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="rendas.css">
-    
+
     <title>Rendas</title>
 </head>
 
@@ -13,13 +13,14 @@
     <header class="header">
 
         <a href="perfil.html" class="perfil">
-            <img src="logo.png" class="logo">
-        </a>
+            <div class="logo">
+            <img src="login1.png" class="logo">
+        </div>
+    </a>
         <section>
             <nav class="about">
-                <a href="home.html">Home</a>
-                <a href="rendas.html">Rendas</a>
-
+                <a href="home.html">🠔</a>
+              
                 <button class="btnlogin" onclick="window.location.href='login.html'">
                     Entrar
                 </button>
@@ -31,54 +32,108 @@
         </section>
     </header>
 
+
     <div class="caixa-rendas">
-    <div class="rendas">
-        <div class="textR"><h2>Rendas</h2></div><br>
-  <label for="rendaFixa">Renda Fixa (R$):</label>
-  <input type="number" id="rendaFixa" placeholder="Ex: 300,00">
+        <div class="rendas">
+            <div class="textR">
+                <h2>Rendas</h2>
+            </div><br>
+            <div class="categoriaR">
+                <div class="labelR">
+                    <label for="rendaFixa">Renda Fixa (R$):</label>
+                    <input type="number" id="rendaFixa" placeholder="Ex: 300,00">
+                </div>
+                <div class="labelR">
+                    <label for="rendaExtra">Renda Extra (R$):</label>
+                    <input type="number" id="rendaExtra" placeholder="Ex: 500,00">
+                </div>
+                <div class="labelR">
+                    <label for="rendaVariavel">Renda Variável (R$):</label>
+                    <input type="number" id="rendaVariavel" placeholder="Ex: 1000,00">
+                </div>
+            </div><br>
 
-  <label for="rendaExtra">Renda Extra (R$):</label>
-  <input type="number" id="rendaExtra" placeholder="Ex: 500,00">
+            <!-- <button class="btnrenda" onclick="calcularRenda()">Renda Total</button> -->
 
-  <label for="rendaVariavel">Renda Variável (R$):</label>
-  <input type="number" id="rendaVariavel" placeholder="Ex: 1000,00">
-        <br>
+            <div id="resultado"></div>
 
-<!-- <button class="btnrenda" onclick="calcularRenda()">Renda Total</button> -->
+            <div class="textR">
+                <h2>Categoria de Gastos</h2>
+            </div><br>
+            <label for="alimentacao">Alimentação (R$):</label>
+            <input type="number" id="alimentacao" placeholder="Ex: 300,00">
 
-<div id="resultado"></div>
+            <label for="saude">Saúde (R$):</label>
+            <input type="number" id="saude" placeholder="Ex: 500,00">
 
-<div class="textR"><h2>Categoria de Gastos</h2></div><br>
-<label for="alimentacao">Alimentação (R$):</label>
-<input type="number" id="alimentacao" placeholder="Ex: 300,00">
+            <label for="moradia">Moradia (R$):</label>
+            <input type="number" id="moradia" placeholder="Ex: 1000,00">
 
-<label for="saude">Saúde (R$):</label>
-<input type="number" id="saude" placeholder="Ex: 500,00">
+            <label for="lazer">Lazer (R$):</label>
+            <input type="number" id="lazer" placeholder="Ex: 500,00">
 
-<label for="moradia">Moradia (R$):</label>
-<input type="number" id="moradia" placeholder="Ex: 1000,00">
+            <label for="necessidades">Necessidades (R$):</label>
+            <input type="number" id="necessidades" placeholder="Ex: 1000,00">
+            <br>
 
-<label for="lazer">Lazer (R$):</label>
-<input type="number" id="lazer" placeholder="Ex: 500,00">
+            <button class="btnrenda" onclick="calcularGastos()">Calcular Total</button>
+            <br><br>
+            <div id="resultadoGastos"></div>
+            <div class="tela">
 
-<label for="necessidades">Necessidades (R$):</label>
-<input type="number" id="necessidades" placeholder="Ex: 1000,00">
-<br>
+            </div>
+        </div>
+    </div>
+    </div>
 
-<button class="btnrenda" onclick="calcularGastos()">Calcular Total</button>
-<br><br>
-<div id="resultadoGastos"></div>
 
-</div>
-</div>
 
-<script src="calculo.js"></script>
+    <div class="apf">
+        <h1>Gostaria de saber a média <mark>financeira</mark> do seu estado?</h1>
+        <div class="selecion">
+
+            <select id="estado">
+                <option value="">Selecione um estado</option>
+                <option value="12">Acre</option>
+                <option value="27">Alagoas</option>
+                <option value="13">Amazonas</option>
+                <option value="29">Bahia</option>
+                <option value="23">Ceará</option>
+                <option value="53">Distrito Federal</option>
+                <option value="32">Espírito Santo</option>
+                <option value="52">Goiás</option>
+                <option value="21">Maranhão</option>
+                <option value="51">Mato Grosso</option>
+                <option value="50">Mato Grosso do Sul</option>
+                <option value="31">Minas Gerais</option>
+                <option value="15">Pará</option>
+                <option value="25">Paraíba</option>
+                <option value="41">Paraná</option>
+                <option value="26">Pernambuco</option>
+                <option value="22">Piauí</option>
+                <option value="33">Rio de Janeiro</option>
+                <option value="24">Rio Grande do Norte</option>
+                <option value="43">Rio Grande do Sul</option>
+                <option value="11">Rondônia</option>
+                <option value="14">Roraima</option>
+                <option value="42">Santa Catarina</option>
+                <option value="35">São Paulo</option>
+                <option value="28">Sergipe</option>
+                <option value="17">Tocantins</option>
+            </select>
+            <br>
+            <button class="apfbutton" onclick="buscarRenda()">Buscar Renda</button>
+            <div class="resultado" id="resultadoRenda"></div>
+        </div>
+
+        <script src="calculo.js"></script>
+
 
 </body>
 
 
- <footer>
+<!-- <footer>
         <p>&copy; Site desenvolvido através da disciplina "programação web".</p>
-    </footer>
+    </footer> -->
 
 </html>
