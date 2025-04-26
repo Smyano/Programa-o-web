@@ -1,7 +1,7 @@
 :root{
     --main-color: rgb(152, 43, 155);
     --black: #13131a;
-    --bg: #010103;
+    --bg:#1f1e1e;
     --border: 0.1rem solid rgba(255, 255, 255, 0.3 );
     font-size: 10px;
 }
@@ -166,7 +166,7 @@ section{
 
 .btn {
     background-color: var(--main-color);
-    color: #010103;
+    color: #1f1e1e;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;

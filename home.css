@@ -1,7 +1,7 @@
 :root {
     --main-color: rgb(152, 43, 155);
     --black: #13131a;
-    --bg: #010103;
+    --bg: #1f1e1e;
     --border: 0.1rem solid rgba(255, 255, 255, 0.3);
     font-size: 10px;
 }
@@ -81,14 +81,16 @@ section {
 .text {
     margin: 0;
     max-width: 50rem;
-    transform: translate(0%, 30%);
+    transform: translate(0%, 25%);
+    
 }
 
 .text h3 {
     /* margin: 3 auto; */
     color: rgb(255, 255, 255);
     font-size: 5rem;
-    transform: translate(0%, 30%);
+   
+    /* transform: translate(0%, 30%); */
 }
 
 .text p {
@@ -97,7 +99,7 @@ section {
     font-size: 3rem;
     line-height: 1.5;
     padding: 2rem;
-    transform: translate(0%, 10%);
+    transform: translate(0%, -10%);
 }
 
 .textA h1 {
@@ -235,13 +237,14 @@ footer p {
 
   .seta {
     font-size: 20px;
-    color: #4C1D5C;
+    color: #fff;
   }
 
-  a {
+
+  /* a {
     text-decoration: none;
     color: inherit;
-  }
+  } */
   .caixaR {
     margin: 1%;
     display: flex;
