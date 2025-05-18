@@ -63,7 +63,7 @@ section {
 }
 
 .home-container {
-    background: url(desingfi.png);
+    background: url(../../assets/desingfi.png);
     height: 80vh;
     width: 100%;
     background-position: center;
