@@ -61,3 +61,39 @@ section {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
+
+.btn.transparent {
+    margin: 0;
+    color: #fff;
+    background: none;
+    border: 2px solid #fff;
+    width: 100px;
+    height: 41px;
+    font-weight: 600;
+    font-size: 0.1, 9rem;
+    border-radius: 20px;
+    right: 20px;
+    position: fixed;
+    transform: translateY(-18%);
+}
+
+.btn.transparent:hover {
+    background-color: #4C1D5C;
+}
+
+.btnlogin {
+    margin: 0;
+    color: #fff;
+    background: none;
+    width: 140px;
+    height: 41px;
+    font-weight: 600;
+    font-size: 0.1, 9rem;
+    right: 100px;
+    position: fixed;
+    transform: translateY(-18%);
+}
+
+.btnlogin:hover {
+    color: #4C1D5C;
+}
