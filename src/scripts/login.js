@@ -47,13 +47,14 @@ function verificarlogin(event) {
     let usuarioSalvo = localStorage.getItem("usuarioCadastrado");
     let senhaSalva = localStorage.getItem("senhaCadastrada");
 
-    if (usuario === "senac" && senha === "2025") {
-        alert("Login realizado com sucesso!");
-        localStorage.setItem("usuarioLogado", "true");
-        window.location.href = "home.html"; 
-    } else {
-        alert("Usuário ou senha incorretos.");
-    }
+    if (usuario === usuarioSalvo && senha === senhaSalva) {
+    alert("Login realizado com sucesso!");
+    localStorage.setItem("usuarioLogado", "true");
+    window.location.href = "home.html";
+} else {
+    alert("Usuário ou senha incorretos.");
+}
+
 }
 
 
