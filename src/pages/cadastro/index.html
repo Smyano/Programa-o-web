@@ -16,22 +16,35 @@
       <div class="signin-signup">
         <form action="" class="sign-up-form">
           <h2 class="title">Cadastrar</h2>
+
           <div class="input-field">
             <i class="fas fa-user"></i>
             <input type="text" placeholder="Nome de usuário" />
           </div>
+
           <div class="input-field">
             <i class="fas fa-envelope"></i>
             <input type="email" placeholder="E-mail" />
           </div>
+
           <div class="input-field">
             <i class="fas fa-calendar-alt"></i>
             <input type="date" id="dataNascimento" required />
           </div>
+
           <div class="input-field">
             <i class="fas fa-lock"></i>
             <input type="password" placeholder="Senha" />
           </div>
+
+          <!-- Campo de CEP -->
+          <div class="input-field">
+            <i class="fas fa-map-marker-alt"></i>
+            <input type="text" id="cep" placeholder="CEP" maxlength="9" oninput="mascaraCEP(this)" />
+          </div>
+
+          <div id="cep-info"></div>
+
           <input type="button" class="btn" value="Cadastrar" onclick="cadastro()" />
 
           <p class="social-text">Ou cadastre-se com uma plataforma social</p>
@@ -65,6 +78,7 @@
         </div>
         <img src="img/log.svg" class="image" alt="" />
       </div>
+
       <div class="panel right-panel">
         <div class="content">
           <h3>Seja um de nós</h3>
@@ -79,6 +93,7 @@
       </div>
     </div>
   </div>
+
 
   <script src="../../scripts/login.js"></script>
 </body>

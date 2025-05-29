@@ -90,7 +90,7 @@ form.signin-form {
 }
 
 .input-field input {
-    background: none;
+    background: transparent;
     outline: none;
     border: none;
     line-height: 1;
@@ -413,3 +413,16 @@ input[type="date"] {
 input[type="date"]::-webkit-calendar-picker-indicator {
     filter: invert(1);
   }
+
+  #cep-info {
+  color: #080808;
+  font-size: 0.9rem;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+/* Corrige fundo branco do autocomplete */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #333 inset !important;
+  -webkit-text-fill-color: #fff !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
