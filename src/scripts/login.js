@@ -51,7 +51,7 @@ function verificarlogin(event) {
     if (usuario === usuarioSalvo && senha === senhaSalva) {
     alert("Login realizado com sucesso!");
     localStorage.setItem("usuarioLogado", "true");
-    window.location.href = "home.html";
+    window.location.href="../home/index.html";
 } else {
     alert("Usuário ou senha incorretos.");
 }
