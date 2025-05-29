@@ -37,7 +37,8 @@ function cadastro() {
     alert("Cadastro realizado com sucesso! Redirecionando para o login...");
 
    
-    window.location.href = "login.html"; 
+    window.location.href = "../login/index.html";
+
 }
 
 function verificarlogin(event) {
